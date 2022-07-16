@@ -1,6 +1,5 @@
 ﻿public partial class Program : ProgramBase
-{
-    public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+{   public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
     {
         ListNode l3 = new ListNode(0);
         ListNode l4 = l3;
@@ -8,7 +7,6 @@
 
         while (l1 != null && l2 != null)
         {
-
             int result = l1.val + l2.val + raise;
             if (result < 10)
             {
@@ -20,12 +18,10 @@
 
             else
             {
-
                 int reminder = result % 10;
                 raise = 1;
                 l3.next = new ListNode(reminder);
                 l3 = l3.next;
-
             }
             l1 = l1.next;
             l2 = l2.next;
@@ -67,8 +63,6 @@
                 }
             }
         }
-
-
         else if (l1 == null && l2 != null)
         {
             if (raise == 0)
@@ -101,13 +95,9 @@
 
                     }
                     l2 = l2.next;
-
                 }
-
-
             }
         }
-
         else if (l1 == null && l2 == null && raise == 1)
         {
             while (l3.next != null)
@@ -120,8 +110,5 @@
         }
 
         return l4.next;
-
-
-
     }
 }
