@@ -14,7 +14,6 @@
                 if (j + 1 < nums.Length)
                 {
                     right += nums[j + 1];
-
                 }
                 j++;
             }
