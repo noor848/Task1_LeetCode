@@ -1,19 +1,7 @@
-﻿/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     public int val;
- *     public ListNode next;
- *     public ListNode(int val=0, ListNode next=null) {
- *         this.val = val;
- *         this.next = next;
- *     }
- * }
- */
-public class Solution
+﻿public partial class Program : ProgramBase
 {
-    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+    public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
     {
-
         ListNode l3 = new ListNode(0);
         ListNode l4 = l3;
         int raise = 0;
@@ -41,8 +29,6 @@ public class Solution
             }
             l1 = l1.next;
             l2 = l2.next;
-
-
         }
 
         if (l2 == null && l1 != null)
@@ -76,23 +62,10 @@ public class Solution
                         break;
 
                     }
-
-
                     l1 = l1.next;
 
                 }
-
-
-
-
-
-
-
-
             }
-
-
-
         }
 
 
@@ -127,17 +100,12 @@ public class Solution
                         break;
 
                     }
-
-
                     l2 = l2.next;
 
                 }
 
 
             }
-
-
-
         }
 
         else if (l1 == null && l2 == null && raise == 1)
