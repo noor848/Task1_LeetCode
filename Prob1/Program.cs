@@ -1,8 +1,6 @@
-﻿public class Solution
-{
-    public static int LengthOfLongestSubstring(string s)
+﻿public class Program 
+{ public static int LengthOfLongestSubstring(string s)
     {
-
         Dictionary<int, int> dict = new Dictionary<int, int>();
         List<int> counts = new List<int>();
 
@@ -21,7 +19,6 @@
             {
                 for (int k = i; k < s.Length; k++)
                 {
-
                     if (!dict.ContainsKey(s[k]))
                     {
                         dict.Add(s[k], k);
@@ -32,17 +29,12 @@
                         dict.Clear();
                         break;
                     }
-
-
                 }
-
             }
             return counts.Max();
         }
         return 0;
     }
-
-
     public static void Main()
     {
         Console.WriteLine(LengthOfLongestSubstring("abcabcbb"));
