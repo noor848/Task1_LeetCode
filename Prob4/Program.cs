@@ -40,7 +40,6 @@
     }
     public static void Main(string[]args)
     {
-
         Console.WriteLine(IsIsomorphic("egg","add"));
 
     }
